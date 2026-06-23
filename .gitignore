@@ -1,0 +1,23 @@
+# Dependencies and package manager caches
+node_modules/
+.pnpm-store/
+
+# Build and test output
+.turbo/
+dist/
+coverage/
+.next/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs and local tooling
+*.log
+.DS_Store
+Thumbs.db
+
+# Generated database clients and local volumes
+packages/database/generated/
+infra/docker/volumes/
