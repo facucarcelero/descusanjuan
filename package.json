@@ -12,7 +12,8 @@
   },
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev",
+    "dev": "npm run dev:stop && turbo run dev",
+    "dev:stop": "npx --yes kill-port 1500 3001 4000",
     "lint": "prettier --check . && turbo run lint",
     "format": "prettier --write .",
     "test": "turbo run test",

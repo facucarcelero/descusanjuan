@@ -25,3 +25,162 @@ body {
   outline: 3px solid var(--color-focus);
   outline-offset: 3px;
 }
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem clamp(1rem, 4vw, 3rem);
+  border-bottom: 1px solid #e5e9f2;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.5rem;
+  background: #1d4ed8;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.brand-name {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.hero {
+  flex: 1;
+  max-width: 48rem;
+  padding: clamp(2rem, 8vw, 5rem) clamp(1rem, 4vw, 3rem);
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: #1d4ed8;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.15;
+}
+
+.lead {
+  margin: 0 0 1.75rem;
+  max-width: 38rem;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #4b5565;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0 1.25rem;
+  border-radius: 0.625rem;
+  border: 1px solid transparent;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.button-primary {
+  background: #1d4ed8;
+  color: #ffffff;
+}
+
+.button-primary:hover {
+  background: #1e40af;
+}
+
+.button-secondary {
+  border-color: #c7d2e5;
+  background: #ffffff;
+  color: var(--color-foreground);
+}
+
+.button-secondary:hover {
+  background: #f4f7fb;
+}
+
+.features {
+  padding: 0 clamp(1rem, 4vw, 3rem) 3rem;
+}
+
+.features h2 {
+  margin: 0 0 1.25rem;
+  font-size: 1.5rem;
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.feature-card {
+  padding: 1.25rem;
+  border: 1px solid #e5e9f2;
+  border-radius: 0.875rem;
+  background: #f8fafc;
+}
+
+.feature-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.feature-card p {
+  margin: 0;
+  line-height: 1.5;
+  color: #4b5565;
+}
+
+.footer {
+  padding: 1.5rem clamp(1rem, 4vw, 3rem);
+  border-top: 1px solid #e5e9f2;
+  color: #667085;
+  font-size: 0.875rem;
+}
+
+.footer p {
+  margin: 0;
+}

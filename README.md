@@ -15,6 +15,8 @@ cp .env.example .env
 npm run dev
 ```
 
+`npm run dev` libera automáticamente los puertos 1500, 3001 y 4000 antes de arrancar. Si necesitás detener el servidor manualmente, usá `npm run dev:stop`.
+
 | Servicio | URL |
 |----------|-----|
 | Web | http://localhost:1500 |
