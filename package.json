@@ -2,14 +2,17 @@
   "name": "descusanjuan",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@11.8.0",
+  "packageManager": "npm@11.8.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "engines": {
-    "node": ">=24.0.0 <25",
-    "pnpm": ">=11.8.0 <12"
+    "node": ">=22.0.0 <25"
   },
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
+    "dev": "turbo run dev",
     "lint": "prettier --check . && turbo run lint",
     "format": "prettier --write .",
     "test": "turbo run test",
